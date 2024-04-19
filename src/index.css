@@ -1,0 +1,22 @@
+
+form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.formContainer {
+    width: 400px;
+    margin: auto;
+}
+
+.player-list {
+    display: flex;
+    
+}
+
+
+
+.image {
+    width: 50%;
+}
