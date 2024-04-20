@@ -8,10 +8,10 @@ const deletePlayer = async (playerId) => {
         throw new Error('Failed to delete player');
       }
   
-      // You might get a success response from the API 
+      
     } catch (error) {
       console.error('Error deleting player:', error);
-      // Handle the error appropriately 
+      
     }
   };
 

@@ -1,6 +1,9 @@
-const addNewPlayer = async (newPlayerData) => {
 
+
+const addNewPlayer = async (newPlayerData) => {
     const APIURL = "https://fsa-puppy-bowl.herokuapp.com/api/2401-FTB-ET-WEB-PT/players";
+
+    
     try {
         const response = await fetch(APIURL, {
             method: 'POST',

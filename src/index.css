@@ -1,4 +1,17 @@
 
+
+.playerContainer {
+    border: 5px;
+    border-style: ridge;
+    border-radius: 10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: end;
+    gap: 5px;
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -12,6 +25,7 @@ form {
 
 .player-list {
     display: flex;
+    margin: 5px;
     
 }
 
@@ -20,3 +34,4 @@ form {
 .image {
     width: 50%;
 }
+

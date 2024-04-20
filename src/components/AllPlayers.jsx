@@ -16,7 +16,7 @@ export default function AllPlayers() {
         const data = await fetchPlayers();
         setPlayers(data.data.players);
     } catch (error) {
-        setError(error);
+        setError(error)
     }
   }
 
@@ -54,17 +54,17 @@ export default function AllPlayers() {
   
 
   return (
-    <div>
-      <h1 className="text-3xl">All Players</h1>
-      {error && <div>Error: {error.message}</div>} {/* Error handling */}
-      {players && ( // Render only if players exists
+    <div className="playerContainer">
+      <h1>All Players</h1>
+      {error && <div>Error: {error.message}</div>} 
+      {players && ( 
         <div className="player-list">
           {players.map((player) => (
             <PlayerCard
               key={player.id}
               player={player}
-              onDelete={handleDelete} // Implement this
-              onDetails={handleDetails} // Implement this
+              onDelete={handleDelete} 
+              onDetails={handleDetails} 
             />
           ))}
         </div>
@@ -77,6 +77,7 @@ export default function AllPlayers() {
           />
         )}
       </div>
+      <footer className="footer"></footer>
     </div>
   );
 }
